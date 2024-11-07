@@ -1,0 +1,91 @@
+        /* Gaya CSS menggunakan variabel */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: var(--font-family);
+            background-color: var(--background-color);
+            padding: var(--padding);
+        }
+        .navbar {
+            background-color: var(--primary-color);
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 30px;
+            color: white;
+            text-align: center;
+            font-size: var(--navbar-font-size);
+            font-weight: bold;
+        }
+        .navbar input {
+            width: 90%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+        }
+        .container {
+            box-shadow: 1px 2px 5px var(--container-shadow);
+            background-color: var(--container-bg-color);
+            padding: 15px 15px 5px 15px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            border-top: 30px solid var(--primary-color);
+        }
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 8px;
+            padding: 0;
+        }
+        .produk {
+            background-color: var(--container-bg-color);
+            border-radius: 10px;
+            border: 1px solid var(--primary-color);
+            text-align: center;
+            padding: 5px;
+            transition: transform 0.3s;
+            height: 95px;
+            margin-bottom: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+        .produk:hover {
+            transform: translateY(-5px);
+        }
+        .produk img {
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .textproduk {
+            font-size: var(--produk-font-size);
+            color: var(--text-color);
+            font-weight: 600;
+        }
+        .footer {
+            text-align: center;
+            font-size: var(--footer-font-size);
+            margin-top: 30px;
+        }
+        .footer img {
+            width: 20px;
+            vertical-align: middle;
+        }
+        .modal-header {
+            background-color: var(--primary-color);
+            color: #fff;
+        }
+        a {
+            text-decoration: none;
+        }
+        .no-data {
+            text-align: center;
+            font-size: var(--footer-font-size);
+            color: var(--text-muted);
+            margin-top: 20px;
+        }
+    
